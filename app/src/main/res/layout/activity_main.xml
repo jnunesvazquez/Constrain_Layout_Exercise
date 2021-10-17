@@ -8,37 +8,36 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="137dp"
-        android:layout_height="40dp"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="124dp"
         android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        tools:layout_editor_absoluteX="85dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="76dp"
         android:text="B"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.335"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="326dp" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="C"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="358dp" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="right"
-        app:constraint_referenced_ids="button3,button2"
-        tools:layout_editor_absoluteX="411dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="377dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
